@@ -22,6 +22,7 @@ jobs:
         run: |
            cd $Env:GITHUB_WORKSPACE\Verademo-Dotnet\bin\
            7z a -r verademoDotNet.zip *
+           dir
       - name: Publicando Artefato
         uses: actions/upload-artifact@v2
         with:
