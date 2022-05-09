@@ -26,7 +26,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: pacoteVeracode
-          path: verademoDotNet.zip
+          path: $Env:GITHUB_WORKSPACE\Verademo-Dotnet\bin\verademoDotNet.zip
 
   Veracode_SAST:
     runs-on: ubuntu-latest
