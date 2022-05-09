@@ -50,7 +50,7 @@ jobs:
         env:
           VID: ${{ secrets.VID }} # Lembrar de criar as credenciais no Secrets
           VKEY: ${{ secrets.VKEY }}
-          AppName: Github Actions - ${{ github.repository }}
+          AppName: VeraDemoDotNet
         with:
           vid: '$VID'
           vkey: '$VKEY'
