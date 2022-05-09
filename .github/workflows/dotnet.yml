@@ -18,3 +18,8 @@ jobs:
            NuGet restore
            cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\"
            .\MSBuild.exe $Env:GITHUB_WORKSPACE\Verademo-dotnet.sln
+      - name: ZIP
+        run: |
+           cd $Env:GITHUB_WORKSPACE\Verademo-Dotnet\
+           zip -r verademoDotNet.zip bin
+           
