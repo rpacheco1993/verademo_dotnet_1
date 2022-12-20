@@ -20,7 +20,7 @@ jobs:
         shell: pwsh
         run: |
             Compress-Archive -Path $Env:GITHUB_WORKSPACE\Verademo-Dotnet\bin -DestinationPath verademoDotNet.zip
-      - name: Analise de componentes de terceiros
+      - name: SCA
         shell: pwsh
         env:
           SRCCLR_API_TOKEN: ${{ secrets.SCA }} # Lembrar de criar as credenciais no Secrets
